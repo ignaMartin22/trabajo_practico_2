@@ -12,9 +12,19 @@ public class Producto {
  public enum Categ{
 	 TELEFONIA, INFORMATICA, ELECTROHOGAR, HERRAMIENTAS
  }
+ private boolean stock;
  
  public Producto() {
 	// TODO Auto-generated constructor stub
+}
+public Producto(int codigo, String descripcion, Float precio, Origen origenFabricacion, Categ categoria, boolean stock) {
+	super();
+	this.codigo = codigo;
+	this.descripcion = descripcion;
+	this.precio = precio;
+	this.origenFabricacion = origenFabricacion;
+	this.categoria = categoria;
+	this.stock = stock;
 }
 public Producto(int codigo, String descripcion, Float precio, Origen origenFabricacion, Categ categoria) {
 	super();
@@ -25,6 +35,12 @@ public Producto(int codigo, String descripcion, Float precio, Origen origenFabri
 	this.categoria = categoria;
 }
 
+public boolean getStock() {
+	return stock;
+}
+public void setStock(boolean stock) {
+	this.stock = stock; 
+}
 public int getCodigo() {
 	return codigo;
 }
@@ -66,7 +82,7 @@ public void setCategoria(Categ categoria) {
 }
 @Override
 	public String toString() {
-		return "Codigo: "+codigo+", Descripción: "+descripcion+", Precio Unitario: "+precio+", ORIGEN DE FABRICACIÓN: "+origenFabricacion+", CATEGORIA: "+categoria;
+		return "Codigo: "+codigo+", Descripción: "+descripcion+", Precio Unitario: "+precio+", ORIGEN DE FABRICACIÓN: "+origenFabricacion+", CATEGORIA: "+categoria+ ", Stock: "+stock;
 	}
  
 
