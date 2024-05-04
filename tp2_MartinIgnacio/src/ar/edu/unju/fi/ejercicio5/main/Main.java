@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import ar.edu.unju.fi.ejercicio6.model.PagoEfectivo;
-import ar.edu.unju.fi.ejercicio6.model.PagoTarjeta;
+import ar.edu.unju.fi.ejercicio5.model.PagoEfectivo;
+import ar.edu.unju.fi.ejercicio5.model.PagoTarjeta;
 import ar.edu.unju.fi.model.Producto;
 import ar.edu.unju.fi.model.Producto.Categ;
 import ar.edu.unju.fi.model.Producto.Origen;
